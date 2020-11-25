@@ -36,6 +36,9 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
             this.mktDtNasc = new System.Windows.Forms.MaskedTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +90,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(48, 125);
+            this.txtNome.Location = new System.Drawing.Point(148, 124);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(100, 20);
             this.txtNome.TabIndex = 5;
@@ -104,25 +107,55 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(48, 99);
+            this.txtId.Location = new System.Drawing.Point(148, 98);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 4;
             // 
             // mktDtNasc
             // 
-            this.mktDtNasc.Location = new System.Drawing.Point(48, 151);
+            this.mktDtNasc.Location = new System.Drawing.Point(148, 150);
             this.mktDtNasc.Mask = "00/00/0000";
             this.mktDtNasc.Name = "mktDtNasc";
             this.mktDtNasc.Size = new System.Drawing.Size(100, 20);
             this.mktDtNasc.TabIndex = 6;
             this.mktDtNasc.ValidatingType = typeof(System.DateTime);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(60, 101);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 13);
+            this.label2.TabIndex = 71;
+            this.label2.Text = "ID";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(60, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 72;
+            this.label3.Text = "Nome";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(60, 157);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.TabIndex = 73;
+            this.label4.Text = "Nascimento";
+            // 
             // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(305, 245);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.mktDtNasc);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnCadastrar);
@@ -149,5 +182,8 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.MaskedTextBox mktDtNasc;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

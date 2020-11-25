@@ -23,5 +23,24 @@ namespace TI_DB
             cadUsuario.MdiParent = this;
             cadUsuario.Show();
         }
+
+        private void doarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void departamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDisciplina frmDisciplina = new FrmDisciplina();
+            frmDisciplina.MdiParent = this;
+            frmDisciplina.Show();
+        }
+
+        private void departamentoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmDepartamento frmDepartamaneto = new FrmDepartamento();
+            frmDepartamaneto.MdiParent = this;
+            frmDepartamaneto.Show();
+        }
     }
 }

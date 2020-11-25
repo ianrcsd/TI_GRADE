@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TI_DB.Classes
 {
-    class CadUsuario
+    class Usuario
     {
         DAL objDAL = new DAL();
        
@@ -34,6 +34,12 @@ namespace TI_DB.Classes
             return data;
 
 
+        }
+
+        public DataTable ListarProfessor()
+        {
+            objDAL.Conectar();
+            return objDAL.RetDataTable("select id, nome from USUARIO inner join professor on (id = id_usuario);");
         }
 
         public void NovoUsuario()

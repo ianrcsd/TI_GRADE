@@ -13,7 +13,7 @@ namespace TI_DB
     public partial class FrmUsuario : Form
     {
 
-        Classes.CadUsuario objCadUsuario = new Classes.CadUsuario();
+        Classes.Usuario objCadUsuario = new Classes.Usuario();
 
        
         public FrmUsuario()
@@ -44,6 +44,10 @@ namespace TI_DB
                 MessageBox.Show(this, "Erro ao finalizar o sistema: " + ex.Message.ToString(), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
+
+            txtId.Clear();
+            txtNome.Clear();
+            mktDtNasc.Clear();
         }
     }
 }

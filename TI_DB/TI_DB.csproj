@@ -47,8 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\CadUsuario.cs" />
+    <Compile Include="Classes\Departamento.cs" />
+    <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Classes\DAL.cs" />
+    <Compile Include="Classes\Disciplina.cs" />
+    <Compile Include="FrmDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartamento.Designer.cs">
+      <DependentUpon>FrmDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDisciplina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDisciplina.Designer.cs">
+      <DependentUpon>FrmDisciplina.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +77,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDepartamento.resx">
+      <DependentUpon>FrmDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDisciplina.resx">
+      <DependentUpon>FrmDisciplina.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
