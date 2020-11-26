@@ -35,6 +35,7 @@
             this.departamentoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ajustesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.turmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +58,8 @@
             this.cadastrarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuarioToolStripMenuItem,
             this.departamentoToolStripMenuItem,
-            this.departamentoToolStripMenuItem1});
+            this.departamentoToolStripMenuItem1,
+            this.turmaToolStripMenuItem});
             this.cadastrarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.InfoText;
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
             this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(96, 23);
@@ -98,6 +100,13 @@
             this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.usuárioToolStripMenuItem.Text = "Usuário";
             // 
+            // turmaToolStripMenuItem
+            // 
+            this.turmaToolStripMenuItem.Name = "turmaToolStripMenuItem";
+            this.turmaToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.turmaToolStripMenuItem.Text = "Turma";
+            this.turmaToolStripMenuItem.Click += new System.EventHandler(this.turmaToolStripMenuItem_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -123,6 +132,7 @@
         private System.Windows.Forms.ToolStripMenuItem usuárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem departamentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem departamentoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem turmaToolStripMenuItem;
     }
 }
 

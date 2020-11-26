@@ -42,5 +42,12 @@ namespace TI_DB
             frmDepartamaneto.MdiParent = this;
             frmDepartamaneto.Show();
         }
+
+        private void turmaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTurmas frm = new FrmTurmas();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

@@ -48,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Departamento.cs" />
+    <Compile Include="Classes\Grade.cs" />
+    <Compile Include="Classes\Semestre.cs" />
+    <Compile Include="Classes\Turma.cs" />
     <Compile Include="Classes\Usuario.cs" />
     <Compile Include="Classes\DAL.cs" />
     <Compile Include="Classes\Disciplina.cs" />
@@ -69,6 +72,12 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTurmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTurmas.Designer.cs">
+      <DependentUpon>FrmTurmas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTurmas.resx">
+      <DependentUpon>FrmTurmas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuario.resx">
       <DependentUpon>FrmUsuario.cs</DependentUpon>

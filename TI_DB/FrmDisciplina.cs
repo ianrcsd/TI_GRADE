@@ -14,6 +14,7 @@ namespace TI_DB
     {
         Disciplina objDisciplina = new Disciplina();
         Classes.Usuario objUsuario = new Classes.Usuario();
+        Classes.Grade objGrade = new Classes.Grade();
         public FrmDisciplina()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace TI_DB
         private void FrmDisciplina_Load(object sender, EventArgs e)
         {
             CarregarProfessor();
+            CarregarDisciplina();
         }
 
         public void CarregarProfessor()
@@ -34,6 +36,17 @@ namespace TI_DB
             cmbProfessor.DataSource = data;
             cmbProfessor.ValueMember = "id";
             cmbProfessor.DisplayMember = "nome";
+        }
+        public void CarregarDisciplina()
+        {
+            DataTable data = new DataTable();
+
+            data = objDisciplina.ListarDisciplina();
+
+
+            cmbDisciplina.DataSource = data;
+            cmbDisciplina.ValueMember = "id";
+            cmbDisciplina.DisplayMember = "nome";
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -48,6 +61,28 @@ namespace TI_DB
                 objDisciplina.IdProfessor = Convert.ToInt32(cmbProfessor.SelectedValue);
                 objDisciplina.NovaDisciplina();
                 MessageBox.Show("Disciplina Cadastrado com Sucesso!!!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Erro ao finalizar o sistema: " + ex.Message.ToString(), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastrarGrafo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                objGrade.IdGrade = Convert.ToInt32(txtIdGrade.Text);
+                objGrade.Dia_semana = Convert.ToInt32(mkt_DiaSemana.Text);                
+                objGrade.IdDisciplina = Convert.ToInt32(cmbDisciplina.SelectedValue);
+                objGrade.NovaGrade();
+                MessageBox.Show("Grafo Cadastrado com Sucesso!!!");
             }
             catch (Exception ex)
             {
