@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Threading.Tasks;
-;
+
 
 namespace TI_DB.Classes
 {
@@ -15,11 +15,10 @@ namespace TI_DB.Classes
 
 
         private int idTurma;
-        private int idAluno;
+     
         private int idProfessor;
 
-        public int IdTurma { get => idTurma; set => idTurma = value; }
-        public int IdAluno { get => idAluno; set => idAluno = value; }
+        public int IdTurma { get => idTurma; set => idTurma = value; }   
         public int IdProfessor { get => idProfessor; set => idProfessor = value; }
 
         public DataTable CarregarSemestre()
@@ -34,14 +33,22 @@ namespace TI_DB.Classes
 
         }
 
-        public void NovaTurma()
+        public void NovoSemestre()
         {
 
             objDAL.Conectar();
-            string sql = String.Format("insert into semestre (id_turma,id_aluno,id_professor) VALUES('{0}','{1}','{2}')",
+            string sql = String.Format("insert into semestre (id_turma,id_professor) VALUES('{0}','{1}')",
 
-                IdTurma,IdAluno,IdProfessor);
+                IdTurma,IdProfessor);
             objDAL.ExecutarComandoSQL(sql);
+
+        }
+
+        public DataTable Exibir()
+        {
+            objDAL.Conectar();
+            DataTable data = objDAL.RetDataTable(" select * FROM semestre ");
+            return data;
 
         }
 

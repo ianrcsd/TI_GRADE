@@ -32,6 +32,10 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.dtg_instituicao = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_instituicao)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -71,17 +75,52 @@
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
+            // dtg_instituicao
+            // 
+            this.dtg_instituicao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtg_instituicao.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtg_instituicao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_instituicao.Location = new System.Drawing.Point(17, 139);
+            this.dtg_instituicao.Name = "dtg_instituicao";
+            this.dtg_instituicao.ReadOnly = true;
+            this.dtg_instituicao.Size = new System.Drawing.Size(116, 145);
+            this.dtg_instituicao.TabIndex = 86;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 123);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 13);
+            this.label3.TabIndex = 87;
+            this.label3.Text = "Turmas Cadastradas";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(170, 123);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 125;
+            this.button4.Text = "Apagar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // FrmTurmas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(275, 308);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dtg_instituicao);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);
             this.Name = "FrmTurmas";
             this.Text = "FrmTurmas";
+            this.Load += new System.EventHandler(this.FrmTurmas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_instituicao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,5 +132,8 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.DataGridView dtg_instituicao;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button4;
     }
 }

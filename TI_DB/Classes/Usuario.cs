@@ -36,6 +36,15 @@ namespace TI_DB.Classes
 
         }
 
+        public DataTable Exibir()
+        {
+            objDAL.Conectar();
+            DataTable data = objDAL.RetDataTable(" select * FROM usuario ");
+            return data;
+
+
+        }
+
         public DataTable ListarProfessor()
         {
             objDAL.Conectar();

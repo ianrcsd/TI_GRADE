@@ -49,5 +49,10 @@ namespace TI_DB
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void ajustesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

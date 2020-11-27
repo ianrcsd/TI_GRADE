@@ -28,10 +28,17 @@ namespace TI_DB.Classes
 
 
             objDAL.Conectar();
-            string sql = String.Format("SELECT * FROM disciplina WHERE id='{0}'", idDisciplina);
+            string sql = String.Format("SELECT * FROM grade WHERE id='{0}'", IdGrade);
             DataTable data = objDAL.RetDataTable(sql);
             return data;
 
+
+        }
+        public DataTable Exibir()
+        {
+            objDAL.Conectar();
+            DataTable data = objDAL.RetDataTable(" select * FROM grade ");
+            return data;
 
         }
 

@@ -35,6 +35,15 @@ namespace TI_DB.Classes
             return data;
 
 
+
+        }
+        public DataTable Exibir()
+        {
+            objDAL.Conectar();
+            DataTable data = objDAL.RetDataTable(" select * FROM departamento ");
+            return data;
+
+
         }
 
         public DataTable ListarDepartamento()
@@ -64,11 +73,11 @@ namespace TI_DB.Classes
 
         }
 
-        public void AlterarDisciplina()
+        public void AlterarDep()
         {
 
             objDAL.Conectar();
-            string sql = String.Format("UPDATE IdDepartamento SET nome = '{0}', id_disciplina = '{1}' WHERE id = '{2}'", Nome, IdDisciplina, IdDepartamento);
+            string sql = String.Format("UPDATE departamento SET nome = '{0}', id_disciplina = '{1}' WHERE id = '{2}'", Nome, IdDisciplina, IdDepartamento);
             objDAL.ExecutarComandoSQL(sql);
 
 

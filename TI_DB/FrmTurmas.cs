@@ -18,6 +18,7 @@ namespace TI_DB
             InitializeComponent();
         }
 
+
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             try
@@ -31,7 +32,26 @@ namespace TI_DB
                 MessageBox.Show(this, "Erro ao finalizar o sistema: " + ex.Message.ToString(), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw;
             }
+            ExibirT();
+        }
 
+        private void FrmTurmas_Load(object sender, EventArgs e)
+        {
+            ExibirT();
+        }
+        public void ExibirT()
+        {
+            DataTable data = objTurma.ExibirT();
+            dtg_instituicao.DataSource = data;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            objTurma.IdTurma = Convert.ToInt32(txtId.Text);
+            objTurma.Excluir();
+            MessageBox.Show("Turma Apagada com Sucesso!!!");
+            ExibirT();
         }
     }
 }
+

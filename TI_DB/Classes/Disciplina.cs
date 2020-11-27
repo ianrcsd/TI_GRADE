@@ -35,6 +35,24 @@ namespace TI_DB
 
 
         }
+        public DataTable CarregarDisciplina1(int id)
+        {
+
+
+            objDAL.Conectar();
+            string sql = String.Format("SELECT * FROM disciplina WHERE id='{0}'", id);
+            DataTable data = objDAL.RetDataTable(sql);
+            return data;
+
+
+        }
+        public DataTable ExibirD()
+        {
+            objDAL.Conectar();
+            DataTable data = objDAL.RetDataTable(" select * FROM disciplina ");
+            return data;
+
+        }
 
         public DataTable ListarDisciplina()
         {
@@ -54,11 +72,11 @@ namespace TI_DB
         }
 
 
-        public void Excluir()
+        public void Excluir(int id)
         {
             objDAL.Conectar();            
            
-            string sql = string.Format("DELETE FROM disciplina WHERE id ='{0}'", idDisciplina);
+            string sql = string.Format("DELETE FROM disciplina WHERE id ='{0}'", id);
             objDAL.ExecutarComandoSQL(sql);
 
         }

@@ -56,6 +56,62 @@ namespace TI_DB
         private void FrmDepartamento_Load(object sender, EventArgs e)
         {
             CarregarDisciplina();
+            Exibir();
+        }
+        public void Exibir()
+        {
+            DataTable data = objDepartamento.Exibir();
+            dataGridView1.DataSource = data;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CarregarCombo();
+        }
+        private void CarregarCombo()
+        {
+            objDepartamento.IdDepartamento = Convert.ToInt32(txtId.Text);
+            DataTable data = objDepartamento.CarregarDepartamento();
+
+            if (data.Rows.Count != 0)
+            {
+                txtNome.Text = data.Rows[0]["nome"].ToString();              
+               
+
+
+            }
+            else
+            {
+                MessageBox.Show("O Departamento ainda não possui dados");
+
+            }
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            objDepartamento.IdDepartamento = Convert.ToInt32(txtId.Text);
+            objDepartamento.Excluir();
+            MessageBox.Show("Departamento Apagado com Sucesso!!!");
+            Exibir();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                objDepartamento.IdDepartamento = Convert.ToInt32(txtId.Text);
+                objDepartamento.Nome = txtNome.Text;
+                objDepartamento.IdDisciplina = Convert.ToInt32(cmbDisciplina.SelectedValue);
+                objDepartamento.AlterarDep();
+                MessageBox.Show("Departaemnto Alterado com Sucesso!!!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Erro ao finalizar o sistema: " + ex.Message.ToString(), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+            Exibir();
         }
     }
 }

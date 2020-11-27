@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Classes\Departamento.cs" />
     <Compile Include="Classes\Grade.cs" />
+    <Compile Include="Classes\Sala.cs" />
     <Compile Include="Classes\Semestre.cs" />
     <Compile Include="Classes\Turma.cs" />
     <Compile Include="Classes\Usuario.cs" />

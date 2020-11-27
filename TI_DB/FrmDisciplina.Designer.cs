@@ -46,6 +46,39 @@
             this.label9 = new System.Windows.Forms.Label();
             this.mkt_DiaSemana = new System.Windows.Forms.MaskedTextBox();
             this.btnCadastrarGrafo = new System.Windows.Forms.Button();
+            this.cmbTurmaSemestre = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnSemestre = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cmbProfesorSemestre = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cmbTurmaSala = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtIdSala = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.dtg_disciplina = new System.Windows.Forms.DataGridView();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label18 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label19 = new System.Windows.Forms.Label();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_disciplina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -142,7 +175,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(12, 202);
+            this.label6.Location = new System.Drawing.Point(330, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(227, 29);
             this.label6.TabIndex = 86;
@@ -152,7 +185,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(57, 260);
+            this.label7.Location = new System.Drawing.Point(381, 45);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(18, 13);
             this.label7.TabIndex = 88;
@@ -160,7 +193,7 @@
             // 
             // txtIdGrade
             // 
-            this.txtIdGrade.Location = new System.Drawing.Point(145, 257);
+            this.txtIdGrade.Location = new System.Drawing.Point(424, 45);
             this.txtIdGrade.Name = "txtIdGrade";
             this.txtIdGrade.Size = new System.Drawing.Size(100, 20);
             this.txtIdGrade.TabIndex = 87;
@@ -169,7 +202,7 @@
             // 
             this.cmbDisciplina.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDisciplina.FormattingEnabled = true;
-            this.cmbDisciplina.Location = new System.Drawing.Point(145, 315);
+            this.cmbDisciplina.Location = new System.Drawing.Point(424, 103);
             this.cmbDisciplina.Name = "cmbDisciplina";
             this.cmbDisciplina.Size = new System.Drawing.Size(100, 21);
             this.cmbDisciplina.TabIndex = 93;
@@ -177,7 +210,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(57, 318);
+            this.label8.Location = new System.Drawing.Point(336, 106);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 13);
             this.label8.TabIndex = 92;
@@ -186,7 +219,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(57, 290);
+            this.label9.Location = new System.Drawing.Point(336, 78);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(63, 13);
             this.label9.TabIndex = 91;
@@ -194,7 +227,7 @@
             // 
             // mkt_DiaSemana
             // 
-            this.mkt_DiaSemana.Location = new System.Drawing.Point(145, 283);
+            this.mkt_DiaSemana.Location = new System.Drawing.Point(424, 71);
             this.mkt_DiaSemana.Name = "mkt_DiaSemana";
             this.mkt_DiaSemana.Size = new System.Drawing.Size(100, 20);
             this.mkt_DiaSemana.TabIndex = 89;
@@ -202,7 +235,7 @@
             // 
             // btnCadastrarGrafo
             // 
-            this.btnCadastrarGrafo.Location = new System.Drawing.Point(170, 342);
+            this.btnCadastrarGrafo.Location = new System.Drawing.Point(449, 130);
             this.btnCadastrarGrafo.Name = "btnCadastrarGrafo";
             this.btnCadastrarGrafo.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrarGrafo.TabIndex = 90;
@@ -210,11 +243,322 @@
             this.btnCadastrarGrafo.UseVisualStyleBackColor = true;
             this.btnCadastrarGrafo.Click += new System.EventHandler(this.btnCadastrarGrafo_Click);
             // 
+            // cmbTurmaSemestre
+            // 
+            this.cmbTurmaSemestre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTurmaSemestre.FormattingEnabled = true;
+            this.cmbTurmaSemestre.Location = new System.Drawing.Point(819, 48);
+            this.cmbTurmaSemestre.Name = "cmbTurmaSemestre";
+            this.cmbTurmaSemestre.Size = new System.Drawing.Size(100, 21);
+            this.cmbTurmaSemestre.TabIndex = 101;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(731, 51);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(37, 13);
+            this.label10.TabIndex = 100;
+            this.label10.Text = "Turma";
+            // 
+            // btnSemestre
+            // 
+            this.btnSemestre.Location = new System.Drawing.Point(844, 106);
+            this.btnSemestre.Name = "btnSemestre";
+            this.btnSemestre.Size = new System.Drawing.Size(75, 23);
+            this.btnSemestre.TabIndex = 98;
+            this.btnSemestre.Text = "Cadastrar";
+            this.btnSemestre.UseVisualStyleBackColor = true;
+            this.btnSemestre.Click += new System.EventHandler(this.btnSemestre_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.Location = new System.Drawing.Point(670, 16);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(266, 29);
+            this.label13.TabIndex = 94;
+            this.label13.Text = "Cadastro do Semestre";
+            // 
+            // cmbProfesorSemestre
+            // 
+            this.cmbProfesorSemestre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProfesorSemestre.FormattingEnabled = true;
+            this.cmbProfesorSemestre.Location = new System.Drawing.Point(819, 79);
+            this.cmbProfesorSemestre.Name = "cmbProfesorSemestre";
+            this.cmbProfesorSemestre.Size = new System.Drawing.Size(100, 21);
+            this.cmbProfesorSemestre.TabIndex = 103;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(731, 82);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(51, 13);
+            this.label11.TabIndex = 102;
+            this.label11.Text = "Professor";
+            // 
+            // cmbTurmaSala
+            // 
+            this.cmbTurmaSala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTurmaSala.FormattingEnabled = true;
+            this.cmbTurmaSala.Location = new System.Drawing.Point(1118, 80);
+            this.cmbTurmaSala.Name = "cmbTurmaSala";
+            this.cmbTurmaSala.Size = new System.Drawing.Size(100, 21);
+            this.cmbTurmaSala.TabIndex = 109;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(1054, 83);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 13);
+            this.label12.TabIndex = 108;
+            this.label12.Text = "Turma";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(1073, 53);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(18, 13);
+            this.label14.TabIndex = 106;
+            this.label14.Text = "ID";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1143, 107);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 105;
+            this.button1.Text = "Cadastrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label15.Location = new System.Drawing.Point(1011, 16);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(207, 29);
+            this.label15.TabIndex = 104;
+            this.label15.Text = "Cadastro de Sala";
+            // 
+            // txtIdSala
+            // 
+            this.txtIdSala.Location = new System.Drawing.Point(1118, 49);
+            this.txtIdSala.Name = "txtIdSala";
+            this.txtIdSala.Size = new System.Drawing.Size(100, 20);
+            this.txtIdSala.TabIndex = 110;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(14, 194);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(119, 13);
+            this.label16.TabIndex = 112;
+            this.label16.Text = "Disciplinas Cadastradas";
+            // 
+            // dtg_disciplina
+            // 
+            this.dtg_disciplina.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtg_disciplina.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtg_disciplina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_disciplina.Location = new System.Drawing.Point(17, 210);
+            this.dtg_disciplina.Name = "dtg_disciplina";
+            this.dtg_disciplina.ReadOnly = true;
+            this.dtg_disciplina.Size = new System.Drawing.Size(252, 167);
+            this.dtg_disciplina.TabIndex = 111;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(332, 194);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(98, 13);
+            this.label17.TabIndex = 114;
+            this.label17.Text = "Grade Cadastradas";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(335, 210);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(252, 167);
+            this.dataGridView1.TabIndex = 113;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(681, 194);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(113, 13);
+            this.label18.TabIndex = 116;
+            this.label18.Text = "Semestre Cadastradas";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(684, 210);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(252, 167);
+            this.dataGridView2.TabIndex = 115;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(1004, 194);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(95, 13);
+            this.label19.TabIndex = 118;
+            this.label19.Text = "Salas Cadastradas";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(1007, 210);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.Size = new System.Drawing.Size(252, 167);
+            this.dataGridView3.TabIndex = 117;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(89, 164);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 119;
+            this.button2.Text = "Alterar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(0, 51);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(51, 24);
+            this.button3.TabIndex = 120;
+            this.button3.Text = "Buscar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(8, 164);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 121;
+            this.button4.Text = "Apagar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(401, 159);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 124;
+            this.button5.Text = "Apagar";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(324, 41);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(51, 24);
+            this.button6.TabIndex = 123;
+            this.button6.Text = "Buscar";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(368, 130);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 122;
+            this.button7.Text = "Alterar";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(1143, 140);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 127;
+            this.button8.Text = "Apagar";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(1016, 51);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(51, 24);
+            this.button9.TabIndex = 126;
+            this.button9.Text = "Buscar";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(1057, 107);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 125;
+            this.button10.Text = "Alterar";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // FrmDisciplina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 489);
+            this.ClientSize = new System.Drawing.Size(1271, 536);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.dataGridView3);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.dtg_disciplina);
+            this.Controls.Add(this.txtIdSala);
+            this.Controls.Add(this.cmbTurmaSala);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.cmbProfesorSemestre);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.cmbTurmaSemestre);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.btnSemestre);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.cmbDisciplina);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -236,6 +580,10 @@
             this.Name = "FrmDisciplina";
             this.Text = "FrmDisciplina";
             this.Load += new System.EventHandler(this.FrmDisciplina_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_disciplina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,5 +608,34 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.MaskedTextBox mkt_DiaSemana;
         private System.Windows.Forms.Button btnCadastrarGrafo;
+        private System.Windows.Forms.ComboBox cmbTurmaSemestre;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnSemestre;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cmbProfesorSemestre;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cmbTurmaSala;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtIdSala;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DataGridView dtg_disciplina;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }
